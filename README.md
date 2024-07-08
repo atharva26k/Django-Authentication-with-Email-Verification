@@ -21,6 +21,22 @@ This project is a Django-based authorization module that includes a signup page,
 git clone https://github.com/atharva26k/Django-Authentication-with-Email-Verification.git
 cd authorization_module
 ```
+Alternatively, the zip file can be downloaded and extracted into an empty folder and then
+```bash
+cd authorization_module.
+```
+
+### Step 2: Create a virtual environment
+
+```python
+python -m venv virt
+```
+
+### Step 3: Install required packages
+
+```python
+pip install -r requirements.txt
+```
 
 ### Step 2: Run the server
 
