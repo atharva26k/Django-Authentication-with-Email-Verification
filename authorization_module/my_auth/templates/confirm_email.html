@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Verify Email{% endblock title%}
+
+{% block content %}
+<!-- {% if messages %}
+<h2>Please confirm your email address</h2>
+<ul class="messages">
+    {% for message in messages %}
+    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+    {% endfor %}
+</ul>
+{% endif %}
+<p>We have sent you an email with a link to confirm your email address.</p> -->
+
+<section class="vh-100" style="background-color: #c5caf8;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem; background-color: #c2e3eb">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="https://e0.pxfuel.com/wallpapers/859/112/desktop-wallpaper-clever-abstract-iphone-for-art-lovers-cool-portrait.jpg"
+                                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height: 100%; width: 100%;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <h3 class="fw-normal mb-4">Account has been created.</h3>
+                                <h3 class="fw-normal mb-4">Confirm your Email address.</h3>
+                                <p class="mb-4">We have sent you an email with a link to confirm your email address.</p>
+                                <p class="mb-4">Please check your email and click on the link to verify your account.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

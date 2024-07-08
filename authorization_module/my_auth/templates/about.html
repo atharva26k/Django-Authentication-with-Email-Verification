@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title%}
+
+{% block content %}
+<!-- <h2>Welcome, {{ request.user.username }}</h2>
+<p>Email verification successful.</p>
+<p>This is the about page. You're seeing this because you're successfully logged in.</p>
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">logout</button>
+</form> -->
+
+<section class="vh-100" style="background-color: #c5caf8;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem; background-color: #c2e3eb">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="https://e0.pxfuel.com/wallpapers/859/112/desktop-wallpaper-clever-abstract-iphone-for-art-lovers-cool-portrait.jpg"
+                                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height: 100%; width: 100%;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <form method="post" action="{% url 'logout' %}">
+                                    <h2 class="fw-normal mb-2">Welcome,</h2>
+                                    <h1 class="mb-5">{{ request.user.first_name }} {{ request.user.last_name }}</h1>
+                                    <p class="mb-5">This is the about page. You're seeing this because you're successfully logged in.</p>
+                                    {% csrf_token %}
+                                    <div class=" form-outline mb-5">
+                                        <button class="btn btn-login btn-lg btn-block" type="submit" id="">Logout</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
