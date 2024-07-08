@@ -1,6 +1,6 @@
-# Django Authorization Module with Docker
+# Django Authorization Module with Email Verification
 
-This project is a Django-based authorization module that includes a signup page, login page, and an about page with email verification. The setup uses local database but any other RDBMS can also be substituted as per requirement.
+This project is a Django-based authorization module that includes a signup page, a login page, and an about page with email verification. The setup uses a local database, but any other RDBMS can also be substituted according to requirement.
 
 ## Features
 
@@ -27,7 +27,7 @@ cd authorization_module
 python manage.py runserver
 
 
-### Step 3: Open Url in browser.
+### Step 3: Open Url in the browser.
 
 http://127.0.0.1:8000/login/
 http://localhost:8000/login/
